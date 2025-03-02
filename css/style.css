@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, purple, yellow);
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: yellow;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: darkred;
+    padding: 10px;
+    border: 5px dashed gold;
+    transform: skew(-10deg);
+}
+nav ul li {
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+nav ul li:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-shadow: 3px 3px red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    background: radial-gradient(circle, purple, blue, green);
+    padding: 10px;
+    border: 5px solid gold;
+    transform: rotate(-3deg);
+}
+
+img {
+    max-width: 100%;
+    border: 10px double pink;
+    padding: 5px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+    transition: filter 0.3s ease-in-out;
+}
+img:hover {
+    filter: hue-rotate(90deg) brightness(1.2);
+}
+
+ul li:nth-child(odd) {
+    color: cyan;
+}
+ul li:nth-child(even) {
+    color: magenta;
+}
